@@ -8,6 +8,7 @@ const AddressInfo = () => {
                     <h3>Customer Support</h3>
                     <p>Monday - Saturday</p>
                     <p>9:30 AM - 6:30 PM</p>
+                    <p><a href="tel:+917081171033">+91 7081171033</a></p>
                 </section>
                 <section>
                     <h3>Head Office</h3>
@@ -17,7 +18,7 @@ const AddressInfo = () => {
                 <section>
                     <h3>Contact Info</h3>
                     <p>aquavolts26@gmail.com</p>
-                    <p>+91 9648048908</p>
+                    <p><a href="tel:+919648048908">+91 9648048908</a></p>
                 </section>
             </div>
         </>

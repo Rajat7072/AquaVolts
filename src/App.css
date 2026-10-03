@@ -281,7 +281,7 @@ textarea {
 .process-visual {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 18px;
   align-items: start;
   padding: 18px 12px 0;

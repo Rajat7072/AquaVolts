@@ -7,6 +7,8 @@ const processSteps = [
     { title: 'Source Water', text: 'Pre-screened & checked', icon: 'water' },
     { title: 'Multi-stage Filtration', text: 'Sediment + carbon + reverse osmosis', icon: 'filter' },
     { title: 'UV Purification', text: 'Disinfection before bottling', icon: 'uv' },
+    { title: 'Ozonisation', text: 'Ozone treatment for added purification', icon: 'ozone' },
+    { title: 'Boost Minerals', text: 'Essential minerals for balanced taste', icon: 'minerals' },
     { title: 'Bottle Fill', text: 'Precision filling in hygienic lines', icon: 'bottle' },
     { title: 'Capping & Seal', text: 'Secure closure & quality check', icon: 'seal' },
 ]
@@ -56,6 +58,22 @@ const ProcessIcon = ({ type }) => {
                     <path d="M22 22L18 18M46 22L50 18M22 42L18 46M46 42L50 46" stroke="#0F5BB5" strokeWidth="2" strokeLinecap="round"/>
                     <circle cx="32" cy="32" r="9" fill="#BFEFFF" stroke="#39A9F5" strokeWidth="2.2"/>
                     <path d="M32 24V32L36 36" stroke="#0F5BB5" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+            )
+        case 'ozone':
+            return (
+                <svg {...commonProps}>
+                    <circle cx="32" cy="32" r="17" fill="#E9F7FF" stroke="#0F5BB5" strokeWidth="2.2"/>
+                    <circle cx="32" cy="32" r="8" fill="#BFEFFF" stroke="#39A9F5" strokeWidth="2.2"/>
+                    <path d="M32 8V15M32 49V56M8 32H15M49 32H56M15 15L20 20M44 44L49 49M49 15L44 20M20 44L15 49" stroke="#0F5BB5" strokeWidth="2.2" strokeLinecap="round"/>
+                </svg>
+            )
+        case 'minerals':
+            return (
+                <svg {...commonProps}>
+                    <path d="M18 46L25 22L32 46H18Z" fill="#BFEFFF" stroke="#0F5BB5" strokeWidth="2.2" strokeLinejoin="round"/>
+                    <path d="M30 46L39 14L48 46H30Z" fill="#E9F7FF" stroke="#0F5BB5" strokeWidth="2.2" strokeLinejoin="round"/>
+                    <path d="M25 22L32 31L39 14M25 22L30 46M32 31L48 46" stroke="#39A9F5" strokeWidth="2" strokeLinejoin="round"/>
                 </svg>
             )
         case 'bottle':
